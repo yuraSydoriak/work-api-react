@@ -6,6 +6,7 @@ import styled from "styled-components";
 
 const Content = styled.div`
   padding: 15px;
+  flex-grow: 1;
 `;
 
 function App({ children }) {
