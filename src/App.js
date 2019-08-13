@@ -1,13 +1,18 @@
 import React from "react";
 import Layout from "./HOC/Layout";
-import Header from "./components/Header";
 import Footer from "./components/Footer";
+import HeaderContainer from "./containers/HeaderContainer";
+import styled from "styled-components";
+
+const Content = styled.div`
+  padding: 15px;
+`;
 
 function App({ children }) {
   return (
     <Layout>
-      <Header />
-      <>{children}</>
+      <HeaderContainer />
+      <Content>{children}</Content>
       <Footer />
     </Layout>
   );
