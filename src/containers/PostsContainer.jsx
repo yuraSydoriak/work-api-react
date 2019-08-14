@@ -27,10 +27,10 @@ class PostsContainer extends Component {
 
   render() {
     const { result } = this.state;
-    const { hits } = result;
+    const { hits = [] } = result;
+
     console.log(result);
-    console.log(hits);
-    return <Posts />;
+    return <Posts hits={hits} />;
   }
 }
 
